@@ -28,7 +28,7 @@ Version: 5.1
 */
 
 
-define( 'WPCF7C_VERSION', '5.1' );
+define( 'WPCF7C_VERSION', '5.1-20210324' );
 
 if ( ! defined( 'WPCF7C_PLUGIN_BASENAME' ) )
 	define( 'WPCF7C_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
@@ -48,4 +48,3 @@ if ( ! defined( 'WPCF7C_PLUGIN_MODULES_DIR' ) )
 
 
 require_once WPCF7C_PLUGIN_DIR . '/settings.php';
-

@@ -38,12 +38,7 @@
 				});
 			}
 
-
-
-
 		});
-
-
 
 	}
 
@@ -78,6 +73,10 @@ var wpcf7c_to_step1 = function(parent, scroll){
 		// スムーズスクロール
 		setTimeout(function() { wpcf7c_scroll(parent.find("input[name=_wpcf7_unit_tag]").val()) }, 100);
 	}
+	// 確認ボタン挙動 2021/09/09 Y.Asakawa
+parent.find(".wpcf7c-btn-confirm").on("click", function() {
+	responseOutput.css("display", "");
+});
 
 }
 
@@ -217,13 +216,16 @@ var wpcf7c_step2_error = function(unit_tag) {
 }
 
 
+// DOMのプロパティが変更になったことでコンタクトフォームのユニットタグが
+//Contact Form 7 add confirmに渡らなくなった問題を修正 2021/09/09 Y.Asakawa
+
 document.addEventListener( 'wpcf7submit', function( event ) {
 	switch ( event.detail.status ) {
 		case 'wpcf7c_confirmed':
-		wpcf7c_step1(event.detail.id);
+		wpcf7c_step1(event.detail.unitTag); //wpcf7c_step1(event.detail.id);をwpcf7c_step1(event.detail.unitTag);に変更
 		break;
 		case 'mail_sent':
-		wpcf7c_step2(event.detail.id);
+		wpcf7c_step2(event.detail.unitTag); //wpcf7c_step2(event.detail.id);をwpcf7c_step2(event.detail.unitTag);に変更
 		break;
 
 	}
