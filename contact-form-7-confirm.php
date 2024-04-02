@@ -1,16 +1,16 @@
 <?php
 /*
-Plugin Name: Contact Form 7 add confirm
-Plugin URI: http://www.eyeta.jp/archives/908
+Plugin Name: Contact Form 7 add confirm TS
+Plugin URI: https://github.com/tarosky/contact-form-7-add-confirm-ts
 Description: Add confirm step to contact form 7
-Author: Yuichiro ABE
-Author URI: http://www.eyeta.jp/
+Author: Yuichiro ABE, Tarosky
+Author URI: https://tarosky.co.jp
 Text Domain: contact-form-7-add-confirm
 Domain Path: /languages/
 Version: 5.1
 */
 
-/*  Copyright 2014- Yuichiro ABE (email: y.abe at eyeta.jp)
+/*  Copyright 2014- Yuichiro ABE (email: y.abe at eyeta.jp), Tarosky (https://tarosky.co.jp)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
